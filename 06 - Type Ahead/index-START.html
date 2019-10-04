@@ -22,6 +22,7 @@ const prom = fetch(endpoint)
 .then(blob => blob.json())
 .then(data => cities.push(...data));
 console.log(cities);
+//functions
 function findMatches(wordToMatch, cities){
   return cities.filter(place => {
     // here we need to figure of the city or state matches what's searched
